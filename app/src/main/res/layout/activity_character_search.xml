@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".CharacterSearchActivity">
 
     <include
         android:id="@+id/toolbar_container"
@@ -17,7 +17,7 @@
         layout="@layout/layout_toolbar"/>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMovies"
+        android:id="@+id/rvCharacters"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="@dimen/recycler_view_padding"
@@ -27,6 +27,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:clipToPadding="false"
         android:background="@color/grayish"
-        tools:listitem="@layout/layout_movies_adapter"/>
+        tools:listitem="@layout/layout_characters_adapter"/>
 
 </android.support.constraint.ConstraintLayout>

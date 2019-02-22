@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/tvBirthLabel"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_birth"
+        app:layout_constraintStart_toStartOf="@+id/guide1"
+        app:layout_constraintEnd_toEndOf="@+id/guide1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvBirth"
+        style="@style/AppTheme.Text.Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvBirthLabel"
+        app:layout_constraintEnd_toEndOf="@+id/tvBirthLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirthLabel"
+        tools:text="19BBY" />
+
+    <TextView
+        android:id="@+id/tvSpcPlanetLabel"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_planet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSpcPlanet"
+        style="@style/AppTheme.Text.Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvSpcPlanetLabel"
+        app:layout_constraintEnd_toEndOf="@+id/tvSpcPlanetLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpcPlanetLabel"
+        tools:text="Tatooine" />
+
+    <TextView
+        android:id="@+id/tvHeightLabel"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_height"
+        app:layout_constraintStart_toStartOf="@+id/guide2"
+        app:layout_constraintEnd_toEndOf="@+id/guide2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvHeight"
+        style="@style/AppTheme.Text.Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvHeightLabel"
+        app:layout_constraintEnd_toEndOf="@+id/tvHeightLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeightLabel"
+        tools:text="172 cm" />
+
+</android.support.constraint.ConstraintLayout>

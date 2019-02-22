@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">StarWarsApp</string>
+    <string name="title_activity_character_search">Search for characters</string>
+
+    <string name="label_birth">Birth</string>
+    <string name="label_planet">Planet</string>
+    <string name="label_height">Height</string>
+    <string name="label_species_name">Species</string>
+    <string name="label_species_language">Species Language</string>
+    <string name="label_species_planet">Species Planet</string>
+    <string name="label_species_population">Species Planet Population</string>
 </resources>

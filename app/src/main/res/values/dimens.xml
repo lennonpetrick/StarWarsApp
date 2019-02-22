@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recycler_view_padding">10dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="separator_height">0.5dp</dimen>
+
+    <dimen name="movies_text_margin_top">16dp</dimen>
+    <dimen name="movies_text_margin_start">8dp</dimen>
+
+    <dimen name="movie_detail_content_padding">10dp</dimen>
+    <dimen name="movie_detail_director_margin_top">30dp</dimen>
+
+    <dimen name="characters_content_padding">16dp</dimen>
+
+    <dimen name="character_detail_content_padding">10dp</dimen>
+    <dimen name="character_detail_species_margin_top">20dp</dimen>
+    <dimen name="character_detail_species_label_margin_top">8dp</dimen>
+    <dimen name="character_detail_species_info_margin_start">30dp</dimen>
+
+</resources>
