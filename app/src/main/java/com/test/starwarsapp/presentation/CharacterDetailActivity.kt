@@ -1,7 +1,8 @@
-package com.test.starwarsapp
+package com.test.starwarsapp.presentation
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.test.starwarsapp.R
 
 class CharacterDetailActivity : AppCompatActivity() {
 

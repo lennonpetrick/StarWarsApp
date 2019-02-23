@@ -8,7 +8,9 @@ import io.reactivex.Single
 
 interface Repository {
     fun getMovies(): Single<List<MovieEntity>>
+    fun getMovie(movieId: Int): Single<MovieEntity>
     fun searchCharacters(query: String): Single<List<CharacterEntity>>
+    fun getCharacter(characterId: Int): Single<CharacterEntity>
     fun getSpecies(speciesId: Int): Single<SpecieEntity>
     fun getPlanet(planetId: Int): Single<PlanetEntity>
 }

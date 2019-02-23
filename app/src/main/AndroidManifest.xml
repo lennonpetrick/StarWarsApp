@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        <activity android:name=".presentation.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,11 +17,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CharacterSearchActivity"
+            android:name=".presentation.CharacterSearchActivity"
             android:label="@string/title_activity_character_search"
             android:theme="@style/AppTheme" />
-        <activity android:name=".MovieDetailActivity" />
-        <activity android:name=".CharacterDetailActivity"></activity>
+        <activity android:name=".presentation.MovieDetailActivity" />
+        <activity android:name=".presentation.CharacterDetailActivity"></activity>
     </application>
 
 </manifest>

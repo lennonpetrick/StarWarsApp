@@ -1,4 +1,4 @@
-package com.test.starwarsapp.data
+package com.test.starwarsapp.data.repository.datasource
 
 data class Wrapper<T>(
         val count: Int,

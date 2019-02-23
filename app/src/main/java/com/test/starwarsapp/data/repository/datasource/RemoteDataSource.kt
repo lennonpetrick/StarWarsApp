@@ -1,7 +1,5 @@
-package com.test.starwarsapp.data.datasource
+package com.test.starwarsapp.data.repository.datasource
 
-import com.test.starwarsapp.data.ApiService
-import com.test.starwarsapp.data.Wrapper
 import com.test.starwarsapp.data.entities.CharacterEntity
 import com.test.starwarsapp.data.entities.MovieEntity
 import com.test.starwarsapp.data.entities.PlanetEntity
@@ -27,6 +25,16 @@ class RemoteDataSource(@Inject private val service: ApiService) {
     }
 
     /**
+     * Gets a specific movie from Star Wars api.
+     *
+     * @param movieId The movie number.
+     * @return The desired movie.
+     **/
+    fun getMovie(movieId: Int): Single<MovieEntity> {
+        return service.getMovie(movieId)
+    }
+
+    /**
      * Searches for a character from Star Wars api.
      *
      * @param query Whatever part of the character's name
@@ -35,6 +43,16 @@ class RemoteDataSource(@Inject private val service: ApiService) {
     fun searchCharacters(query: String): Single<List<CharacterEntity>> {
         return service.searchCharacters(query)
                 .map { wrapper -> unWrapper(wrapper)}
+    }
+
+    /**
+     * Gets a specific character from Star Wars api.
+     *
+     * @param characterId The character id.
+     * @return The desired character.
+     **/
+    fun getCharacter(characterId: Int): Single<CharacterEntity> {
+        return service.getCharacter(characterId)
     }
 
     /**

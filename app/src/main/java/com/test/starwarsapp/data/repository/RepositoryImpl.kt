@@ -1,16 +1,16 @@
-package com.test.starwarsapp.data
+package com.test.starwarsapp.data.repository
 
-import com.test.starwarsapp.data.datasource.RemoteDataSource
 import com.test.starwarsapp.data.entities.CharacterEntity
 import com.test.starwarsapp.data.entities.MovieEntity
 import com.test.starwarsapp.data.entities.PlanetEntity
 import com.test.starwarsapp.data.entities.SpecieEntity
+import com.test.starwarsapp.data.repository.datasource.RemoteDataSource
 import com.test.starwarsapp.domain.Repository
 import io.reactivex.Single
 import javax.inject.Inject
 
 /**
- * This class is a implementation of Repository and it is responsible for
+ * This class is a implementation of [Repository] and it is responsible for
  * retrieving data from local and cloud. In this case, it is only fetching in the cloud.
  *
  * Must be executed in a worker thread.
@@ -28,6 +28,16 @@ class RepositoryImpl(@Inject private val dataSource: RemoteDataSource) : Reposit
     }
 
     /**
+     * Gets a specific movie from Star Wars data source.
+     *
+     * @param movieId The movie number.
+     * @return The desired movie.
+     **/
+    override fun getMovie(movieId: Int): Single<MovieEntity> {
+        return dataSource.getMovie(movieId)
+    }
+
+    /**
      * Searches for a character from Star Wars data source.
      *
      * @param query Whatever part of the character's name
@@ -35,6 +45,16 @@ class RepositoryImpl(@Inject private val dataSource: RemoteDataSource) : Reposit
      * */
     override fun searchCharacters(query: String): Single<List<CharacterEntity>> {
         return dataSource.searchCharacters(query)
+    }
+
+    /**
+     * Gets a specific character from Star Wars data source.
+     *
+     * @param characterId The character id.
+     * @return The desired character.
+     **/
+    override fun getCharacter(characterId: Int): Single<CharacterEntity> {
+        return dataSource.getCharacter(characterId)
     }
 
     /**
