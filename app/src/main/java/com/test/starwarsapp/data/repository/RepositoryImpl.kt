@@ -16,7 +16,7 @@ import javax.inject.Inject
  * Must be executed in a worker thread.
  *
  * */
-class RepositoryImpl(@Inject private val dataSource: RemoteDataSource) : Repository {
+class RepositoryImpl @Inject constructor(private val dataSource: RemoteDataSource) : Repository {
 
     /**
      * Returns the list of all movies from Star Wars data source.

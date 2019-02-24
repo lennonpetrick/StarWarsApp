@@ -12,7 +12,7 @@ import javax.inject.Inject
  * in a worker thread.
  *
  * */
-class RemoteDataSource(@Inject private val service: ApiService) {
+class RemoteDataSource @Inject constructor(private val service: ApiService) {
 
     /**
      * Returns the list of all movies from Star Wars api.

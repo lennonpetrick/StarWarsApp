@@ -1,7 +1,7 @@
 package com.test.starwarsapp.domain.usecase
 
-import com.test.starwarsapp.di.IOScheduler
-import com.test.starwarsapp.di.UIScheduler
+import com.test.starwarsapp.di.qualifiers.IOScheduler
+import com.test.starwarsapp.di.qualifiers.UIScheduler
 import com.test.starwarsapp.utils.EspressoIdlingResource
 import io.reactivex.Scheduler
 import io.reactivex.Single

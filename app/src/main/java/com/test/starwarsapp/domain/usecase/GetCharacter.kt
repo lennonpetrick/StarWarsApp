@@ -1,8 +1,8 @@
 package com.test.starwarsapp.domain.usecase
 
 import android.net.Uri
-import com.test.starwarsapp.di.IOScheduler
-import com.test.starwarsapp.di.UIScheduler
+import com.test.starwarsapp.di.qualifiers.IOScheduler
+import com.test.starwarsapp.di.qualifiers.UIScheduler
 import com.test.starwarsapp.domain.Repository
 import com.test.starwarsapp.domain.models.Character
 import com.test.starwarsapp.domain.models.Movie
