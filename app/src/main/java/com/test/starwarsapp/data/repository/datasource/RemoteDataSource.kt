@@ -76,7 +76,7 @@ class RemoteDataSource @Inject constructor(private val service: ApiService) {
     }
 
     private fun <T> unWrapper(wrapper: Wrapper<T>): List<T> {
-        return wrapper.results;
+        return wrapper.results
     }
 
 }

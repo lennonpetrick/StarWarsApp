@@ -16,7 +16,7 @@ import io.reactivex.observers.DisposableSingleObserver
  *
  */
 abstract class UseCase<T, P>(
-        @IOScheduler private val workThread: Scheduler,
+        @IOScheduler protected val workThread: Scheduler,
         @UIScheduler private val uiThread: Scheduler,
         private val disposables: CompositeDisposable
 ) {
