@@ -28,8 +28,8 @@ class SearchCharacters @Inject constructor (
         uiThread,
         disposables
 ) {
-    override fun buildUseCase(params: Params): Single<List<Character>> {
-        return repository.searchCharacters(params.query)
+    override fun buildUseCase(params: Params?): Single<List<Character>> {
+        return repository.searchCharacters(params!!.query)
                 .toObservable()
                 .flatMapIterable()
                 .map { transformCharacter(it) }

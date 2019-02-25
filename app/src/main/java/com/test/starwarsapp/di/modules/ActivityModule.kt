@@ -1,24 +1,23 @@
 package com.test.starwarsapp.di.modules
 
-import com.test.starwarsapp.presentation.CharacterDetailActivity
-import com.test.starwarsapp.presentation.CharacterSearchActivity
-import com.test.starwarsapp.presentation.HomeActivity
-import com.test.starwarsapp.presentation.MovieDetailActivity
+import com.test.starwarsapp.presentation.character.detail.CharacterDetailActivity
+import com.test.starwarsapp.presentation.character.search.CharacterSearchActivity
+import com.test.starwarsapp.presentation.home.HomeActivity
+import com.test.starwarsapp.presentation.moviedetail.MovieDetailActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
 @Module
 abstract class ActivityModule {
-
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [PresenterModule::class])
     abstract fun homeActivity(): HomeActivity
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [PresenterModule::class])
     abstract fun movieDetailActivity(): MovieDetailActivity
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [PresenterModule::class])
     abstract fun characterSearchActivity(): CharacterSearchActivity
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [PresenterModule::class])
     abstract fun characterDetailActivity(): CharacterDetailActivity
 }

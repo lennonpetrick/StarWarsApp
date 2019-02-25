@@ -1,5 +1,6 @@
 package com.test.starwarsapp.di.modules
 
+import com.test.starwarsapp.BuildConfig
 import com.test.starwarsapp.data.repository.datasource.ApiService
 import dagger.Module
 import dagger.Provides
@@ -49,7 +50,7 @@ class NetworkModule {
             jsonConverter: GsonConverterFactory
     ): Retrofit {
         return Retrofit.Builder()
-                //.baseUrl(BuildConfig.API_URL)
+                .baseUrl(BuildConfig.API_URL)
                 .addCallAdapterFactory(rxAdapter)
                 .addConverterFactory(jsonConverter)
                 .client(client)

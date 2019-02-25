@@ -26,7 +26,7 @@ abstract class UseCase<T, P>(
      *
      * @param params The parameters to execute the [UseCase].
      */
-    protected abstract fun buildUseCase(params: P): Single<T>
+    protected abstract fun buildUseCase(params: P?): Single<T>
 
     /**
      * Disposes all observers.
@@ -52,7 +52,7 @@ abstract class UseCase<T, P>(
      * @param observer An observer which will be called after it gets executed.
      * @param params The parameters to execute the current [UseCase].
      */
-    fun execute(observer: DisposableSingleObserver<T>, params: P) {
+    fun execute(observer: DisposableSingleObserver<T>, params: P?) {
         buildUseCase(params)
                 .doOnSubscribe { disposable ->
                     addDisposable(disposable)

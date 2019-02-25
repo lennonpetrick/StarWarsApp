@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.test.starwarsapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
@@ -10,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".presentation.HomeActivity">
+        <activity android:name=".presentation.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,11 +20,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presentation.CharacterSearchActivity"
+            android:name=".presentation.character.search.CharacterSearchActivity"
             android:label="@string/title_activity_character_search"
             android:theme="@style/AppTheme" />
-        <activity android:name=".presentation.MovieDetailActivity" />
-        <activity android:name=".presentation.CharacterDetailActivity"/>
+        <activity android:name=".presentation.moviedetail.MovieDetailActivity" />
+        <activity android:name=".presentation.character.detail.CharacterDetailActivity"/>
     </application>
 
 </manifest>

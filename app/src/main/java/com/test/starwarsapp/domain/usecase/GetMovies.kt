@@ -28,7 +28,7 @@ class GetMovies @Inject constructor (
         disposables
 ) {
 
-    override fun buildUseCase(params: Nothing): Single<List<Movie>> {
+    override fun buildUseCase(params: Nothing?): Single<List<Movie>> {
         return repository.getMovies()
                 .toObservable()
                 .flatMapIterable()

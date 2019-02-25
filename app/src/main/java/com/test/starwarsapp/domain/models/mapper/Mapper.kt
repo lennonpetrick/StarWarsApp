@@ -8,8 +8,7 @@ import com.test.starwarsapp.domain.models.Character
 import com.test.starwarsapp.domain.models.Movie
 import com.test.starwarsapp.domain.models.Planet
 import com.test.starwarsapp.domain.models.Specie
-import java.text.SimpleDateFormat
-import java.util.*
+import com.test.starwarsapp.utils.stringToDate
 
 internal fun transformMovie(entity: MovieEntity): Movie {
     return Movie(
@@ -18,10 +17,7 @@ internal fun transformMovie(entity: MovieEntity): Movie {
             producer = entity.producer,
             openingCrawl = entity.openingCrawl,
             episodeId = entity.episodeId,
-            releaseDate = entity.releaseDate.let {
-                SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-                        .parse(it)
-            }
+            releaseDate = stringToDate(entity.releaseDate)
     )
 }
 

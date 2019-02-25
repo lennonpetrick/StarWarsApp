@@ -37,8 +37,8 @@ class GetCharacter @Inject constructor (
         uiThread,
         disposables
 ) {
-    override fun buildUseCase(params: Params): Single<Character> {
-        return repository.getCharacter(params.id)
+    override fun buildUseCase(params: Params?): Single<Character> {
+        return repository.getCharacter(params!!.id)
                 .flatMap {
                     Single.zip(
                             Single.just(transformCharacter(it)),

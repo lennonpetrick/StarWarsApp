@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.MovieDetailActivity">
+    tools:context=".presentation.moviedetail.MovieDetailActivity">
 
     <include
         android:id="@+id/toolbar_container"
@@ -66,7 +66,7 @@
 
     </android.support.constraint.ConstraintLayout>
 
-    <view
+    <View
         android:id="@+id/separator"
         android:layout_width="0dp"
         android:layout_height="@dimen/separator_height"

@@ -1,4 +1,4 @@
-package com.test.starwarsapp.presentation
+package com.test.starwarsapp.presentation.character.search
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

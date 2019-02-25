@@ -2,6 +2,9 @@
     <string name="app_name">StarWarsApp</string>
     <string name="title_activity_character_search">Search for characters</string>
 
+    <string name="error_default">An error occurred :(</string>
+    <string name="progress_please_wait">please wait…</string>
+
     <string name="label_birth">Birth</string>
     <string name="label_planet">Planet</string>
     <string name="label_height">Height</string>
@@ -9,4 +12,8 @@
     <string name="label_species_language">Species Language</string>
     <string name="label_species_planet">Species Planet</string>
     <string name="label_species_population">Species Planet Population</string>
+
+    <string name="movie_detail_subtitle">Episode %d – %s</string>
+    <string name="movie_detail_director">Directed by %s</string>
+    <string name="movie_detail_producer">Producer by %s</string>
 </resources>
