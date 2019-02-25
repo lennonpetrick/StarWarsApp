@@ -19,15 +19,15 @@
 
     <style name="AppTheme.Text.Large" parent="android:Widget.TextView">
         <item name="android:textColor">@color/text_grey</item>
-        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
     </style>
 
     <style name="AppTheme.Text.Medium" parent="AppTheme.Text.Large">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
     </style>
 
     <style name="AppTheme.Text.Small" parent="AppTheme.Text.Large">
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
     </style>
 
     <style name="AppTheme.Title.Large" parent="android:Widget.TextView">

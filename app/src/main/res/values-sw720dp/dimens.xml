@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recycler_view_padding">40dp</dimen>
+    <dimen name="recycler_view_divider">40dp</dimen>
+    <dimen name="card_padding">24dp</dimen>
+    <dimen name="separator_height">0.5dp</dimen>
+
+    <dimen name="movies_text_margin_top">30dp</dimen>
+    <dimen name="movies_text_margin_start">24dp</dimen>
+
+    <dimen name="movie_detail_content_padding">40dp</dimen>
+    <dimen name="movie_detail_director_margin_top">70dp</dimen>
+
+    <dimen name="characters_content_padding">30dp</dimen>
+
+    <dimen name="character_detail_content_padding">40dp</dimen>
+    <dimen name="character_detail_species_margin_top">50dp</dimen>
+    <dimen name="character_detail_species_label_margin_top">24dp</dimen>
+    <dimen name="character_detail_species_info_margin_start">50dp</dimen>
+
+    <dimen name="text_size_small">24sp</dimen>
+    <dimen name="text_size_medium">30sp</dimen>
+    <dimen name="text_size_large">36sp</dimen>
+</resources>
