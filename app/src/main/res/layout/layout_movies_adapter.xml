@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/tvTitle"
-            style="@style/AppTheme.Text.Large"
+            style="@style/AppTheme.Text.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,7 @@
 
         <TextView
             android:id="@+id/tvReleaseDate"
-            style="@style/AppTheme.Text.Medium"
+            style="@style/AppTheme.Text.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/movies_text_margin_top"
@@ -34,7 +34,7 @@
 
         <TextView
             android:id="@+id/tvDirector"
-            style="@style/AppTheme.Text.Medium"
+            style="@style/AppTheme.Text.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/movies_text_margin_start"
