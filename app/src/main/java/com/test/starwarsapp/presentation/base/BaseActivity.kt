@@ -3,12 +3,12 @@ package com.test.starwarsapp.presentation.base
 import android.app.ProgressDialog
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.text.TextUtils
 import android.view.MenuItem
 import android.widget.Toast
 import com.test.starwarsapp.R
 import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.layout_toolbar.*
+import org.apache.commons.lang3.StringUtils
 import javax.inject.Inject
 
 abstract class BaseActivity<T: BaseContract.Presenter<*>> :
@@ -59,7 +59,7 @@ abstract class BaseActivity<T: BaseContract.Presenter<*>> :
 
     override fun showError(message: String?) {
         hideLoading()
-        val error = if (!TextUtils.isEmpty(message)) message else getString(R.string.error_default)
+        val error = if (StringUtils.isNotEmpty(message)) message else getString(R.string.error_default)
         Toast.makeText(this, error, Toast.LENGTH_LONG).show()
     }
 

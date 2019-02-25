@@ -4,7 +4,6 @@ import com.test.starwarsapp.domain.models.Character
 import com.test.starwarsapp.presentation.base.BaseContract
 
 interface CharacterSearchContract {
-
     interface View : BaseContract.View {
         fun setCharacters(characters: List<Character>)
     }

@@ -1,10 +1,10 @@
 package com.test.starwarsapp.presentation.character.search
 
-import android.text.TextUtils
 import com.test.starwarsapp.domain.models.Character
 import com.test.starwarsapp.domain.usecase.SearchCharacters
 import com.test.starwarsapp.presentation.base.BasePresenter
 import io.reactivex.observers.DisposableSingleObserver
+import org.apache.commons.lang3.StringUtils
 import javax.inject.Inject
 
 class CharacterSearchPresenter @Inject constructor(
@@ -18,7 +18,7 @@ class CharacterSearchPresenter @Inject constructor(
     }
 
     override fun load() {
-        if (TextUtils.isEmpty(search))
+        if (StringUtils.isEmpty(search))
             return
 
         view?.showLoading()

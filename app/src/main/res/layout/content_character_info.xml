@@ -41,7 +41,7 @@
         tools:text="19BBY" />
 
     <TextView
-        android:id="@+id/tvSpcPlanetLabel"
+        android:id="@+id/tvPlanetLabel"
         style="@style/AppTheme.Text.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,13 +51,13 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/tvSpcPlanet"
+        android:id="@+id/tvPlanet"
         style="@style/AppTheme.Text.Info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/tvSpcPlanetLabel"
-        app:layout_constraintEnd_toEndOf="@+id/tvSpcPlanetLabel"
-        app:layout_constraintTop_toBottomOf="@+id/tvSpcPlanetLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvPlanetLabel"
+        app:layout_constraintEnd_toEndOf="@+id/tvPlanetLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlanetLabel"
         tools:text="Tatooine" />
 
     <TextView

@@ -4,7 +4,6 @@ import com.test.starwarsapp.domain.models.Movie
 import com.test.starwarsapp.presentation.base.BaseContract
 
 interface MovieDetailContract {
-
     interface View : BaseContract.View {
         fun setTitle(title: String)
         fun setSubTitle(episode: Int, date: String)

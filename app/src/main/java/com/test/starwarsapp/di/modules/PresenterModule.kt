@@ -1,5 +1,7 @@
 package com.test.starwarsapp.di.modules
 
+import com.test.starwarsapp.presentation.character.detail.CharacterDetailContract
+import com.test.starwarsapp.presentation.character.detail.CharacterDetailPresenter
 import com.test.starwarsapp.presentation.character.search.CharacterSearchContract
 import com.test.starwarsapp.presentation.character.search.CharacterSearchPresenter
 import com.test.starwarsapp.presentation.home.HomeContract
@@ -19,4 +21,7 @@ abstract class PresenterModule {
 
     @Binds
     internal abstract fun providesCharacterSearchPresenter(presenter: CharacterSearchPresenter): CharacterSearchContract.Presenter
+
+    @Binds
+    internal abstract fun providesCharacterDetailPresenter(presenter: CharacterDetailPresenter): CharacterDetailContract.Presenter
 }
