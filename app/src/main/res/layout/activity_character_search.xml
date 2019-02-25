@@ -20,7 +20,6 @@
         android:id="@+id/rvCharacters"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:padding="@dimen/recycler_view_padding"
         app:layout_constraintTop_toBottomOf="@id/toolbar_container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

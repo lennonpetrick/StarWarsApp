@@ -1,6 +1,7 @@
 package com.test.starwarsapp.domain.models
 
 data class Character(
+        val url: String,
         val name: String,
         val birthYear: String,
         val height: String,

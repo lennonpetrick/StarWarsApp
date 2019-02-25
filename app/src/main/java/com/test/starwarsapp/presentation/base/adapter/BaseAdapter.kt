@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 
 abstract class BaseAdapter<T, VH : RecyclerView.ViewHolder> (
-        protected val itens: List<T>
+        protected val itens: MutableList<T>
 ) : RecyclerView.Adapter<VH>() {
 
     var onItemClickListener: OnItemClickListener<T>? = null
@@ -33,6 +33,12 @@ abstract class BaseAdapter<T, VH : RecyclerView.ViewHolder> (
     abstract fun getLayout(): Int
     abstract fun getHolderView(view: View): VH
     abstract fun bind(holder: VH, item: T)
+
+    fun setItems(itens: List<T>) {
+        this.itens.clear()
+        this.itens.addAll(itens)
+        notifyDataSetChanged()
+    }
 
     interface OnItemClickListener<T> {
         fun onItemClick(item: T)

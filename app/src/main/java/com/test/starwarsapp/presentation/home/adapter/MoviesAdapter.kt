@@ -8,7 +8,8 @@ import com.test.starwarsapp.presentation.base.adapter.BaseAdapter
 import com.test.starwarsapp.utils.displayDate
 import kotlinx.android.synthetic.main.layout_movies_adapter.view.*
 
-class MoviesAdapter(movies: List<Movie>) : BaseAdapter<Movie, MoviesAdapter.ViewHolder>(movies) {
+class MoviesAdapter(movies: MutableList<Movie>) :
+        BaseAdapter<Movie, MoviesAdapter.ViewHolder>(movies) {
 
     override fun getLayout(): Int {
         return R.layout.layout_movies_adapter

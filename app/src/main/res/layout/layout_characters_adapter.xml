@@ -5,10 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/characters_content_padding">
+    android:padding="@dimen/characters_content_padding"
+    android:background="@color/white">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvName"
         style="@style/AppTheme.Text.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +25,7 @@
         android:layout_marginStart="@dimen/movies_text_margin_start"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvName"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Born in 19 BBY" />
 

@@ -23,6 +23,7 @@ internal fun transformMovie(entity: MovieEntity): Movie {
 
 internal fun transformCharacter(entity: CharacterEntity): Character {
     return Character(
+            url = entity.url,
             name = entity.name,
             birthYear = entity.birthYear,
             height = entity.height
